@@ -45,6 +45,66 @@ function load() {
   $('main').css({
     opacity: 1
   });
+
+  function attemptPlay() {
+    console.log('Attempting to play audio...');
+    var audio = document.getElementById('backgroundAudio');
+    if (!audio) {
+      console.error('Audio element not found!');
+      return;
+    }
+    audio.volume = 1; // Set a low volume
+    console.log('Audio volume set to:', audio.volume);
+    
+    // Mute the audio first
+    audio.muted = true;
+    
+    var playPromise = audio.play();
+
+    if (playPromise !== undefined) {
+      playPromise.then(() => {
+        console.log('Muted audio playback started successfully');
+        // Unmute after a short delay
+        setTimeout(() => {
+          audio.muted = false;
+          console.log('Audio unmuted');
+        }, 1000);
+      }).catch(error => {
+        console.warn('Auto-play was prevented:', error);
+        console.log('Adding interaction event listeners to document');
+        ['click', 'touchstart', 'keydown'].forEach(event => {
+          document.addEventListener(event, function() {
+            console.log(`Document received ${event}, attempting to play audio`);
+            audio.muted = false;
+            audio.play().then(() => {
+              console.log('Audio playback started after user interaction');
+            }).catch(e => {
+              console.error('Failed to play audio after user interaction:', e);
+            });
+          }, { once: true });
+        });
+      });
+    }
+  }
+
+  // Try to play immediately
+  attemptPlay();
+
+  // Also try to play when the window gains focus
+  window.addEventListener('focus', function() {
+    console.log('Window gained focus, attempting to play audio');
+    attemptPlay();
+  });
+
+  // And when the visibility changes
+  document.addEventListener('visibilitychange', function() {
+    if (!document.hidden) {
+      console.log('Page became visible, attempting to play audio');
+      attemptPlay();
+    } else {
+      console.log('Page became hidden');
+    }
+  });
 }
 
 $(window).on('load', function () {
