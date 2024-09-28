@@ -1,0 +1,50 @@
+/*
+ * Theme Name: ___
+ * 
+ * ANAGRAMA 2024
+ */
+
+/* ===== [ IMPORTANT NOTE ] ======
+ * Please do not edit the compiled style.min.css file
+ * (Those changes are going to be overwritten when compiled again).
+ */
+
+/* ===== [ HOW TO COMPILE ] ======
+ * Prerequisites: Sass
+ * 
+ * [RUN COMMAND INSIDE _root_ FOLDER]
+ * The following command will compile scss assets to css
+ *
+ → sass --watch assets/scss/style.scss:style.min.css --style compressed
+ */
+
+@import 'vendor/bootstrap/bootstrap';
+@import 'vendor/swiper/swiper';
+
+@import 'base/variables';
+@import "base/mixins";
+
+@import 'base/type';
+@import 'base/spacing';
+@import 'base/fonts';
+@import 'base/root';
+@import 'base/animation';
+@import 'base/svg';
+@import 'base/modifiers';
+
+// Import Components
+@import 'components/footer';
+@import 'components/header';
+@import 'components/loader';
+@import 'components/form';
+@import 'components/modal';
+
+// Import Layouts
+@import 'layouts/home';
+@import 'layouts/splash';
+@import 'layouts/error';
+
+// Plugins
+@import 'plugins/utilities';
+//@import 'plugins/dev';
+

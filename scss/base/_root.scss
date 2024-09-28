@@ -1,0 +1,143 @@
+/* 
+ * Anagrama [root] 2021
+ * https://www.anagrama.com/
+ */
+
+/* ===== [ I.NDEX ] ======
+ * i. 1. Normalize
+ * i. 2. General
+ * i. 3. Pages
+ *    -- 3.1 Page Home
+ */
+
+// i. 1. Normalize
+html {
+  font-size: 62.5%;
+  @extend %font-smoothing;
+  scroll-behavior: smooth;
+  background-color: $body-background-color;
+}
+
+body {
+  @extend %type-body;
+  @extend %font-smoothing;
+  background: $body-background-color;
+  color: $body-text-color;
+
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: .009rem;
+}
+
+main {
+  opacity: 0;
+}
+
+.body-no-scroll {
+  overflow: hidden;
+}
+
+a:not([href]):not([tabindex]) {
+  cursor: pointer;
+}
+
+// i. 2. General
+
+input {
+  appearance: none;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+
+
+// i. 3. Pages
+//  -- 3.1 Page Home
+
+// Account Page
+#newAddress,
+#mainAccount,
+.editAddress,
+#editAddress {
+  display: none;
+
+  &.show {
+    display: flex;
+  }
+}
+
+.order-item {
+  padding: 30px 0;
+  border-bottom: 1px solid $black;
+
+  &:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
+.address-item {
+  padding: 30px 0;
+  border-bottom: 1px solid $black;
+}
+
+// Cart
+
+.product-item {
+  position: relative;
+
+  figure {
+    width: 100%;
+    max-width: 100px;
+    height: 100px;
+    margin-right: 30px;
+
+    @include media-breakpoint-up(lg) {
+      max-width: 135px;
+      height: 135px;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+  }
+
+  .btn-remove {
+    position: absolute;
+    right: 0;
+    top: 25px;
+  }
+}
+
+.page-home {
+  height: 100vh;
+
+  .img-container {
+    
+    .img-wrapper {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+.z-index-1{
+  z-index: 1;
+}
+
+.opacity-55{
+  opacity: .55;
+}

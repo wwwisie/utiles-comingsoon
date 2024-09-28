@@ -1,0 +1,16 @@
+svg:not(:root) {
+  overflow: hidden;
+}
+
+svg[role="icon"] {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
+}
+
+.icon-caret {
+  width: 11px;
+  height: 6px;
+}

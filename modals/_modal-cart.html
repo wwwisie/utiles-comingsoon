@@ -1,0 +1,262 @@
+<div id="modal-cart">
+    <div class="cart-wrapper">
+
+        <!-- HEADER -->
+        <div class="container-fluid pt-30 px-30 px-lg-40">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center" >
+                        <svg class="me-2" width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.73993 10.3183C5.82365 10.5814 6.10485 10.7269 6.36799 10.6431C6.63114 10.5594 6.77658 10.2782 6.69285 10.0151L5.73993 10.3183ZM0.802979 0.5C0.526836 0.5 0.302979 0.723858 0.302979 1C0.302979 1.27614 0.526836 1.5 0.802979 1.5V0.5ZM6.69285 10.0151L3.99789 1.54519L3.04497 1.8484L5.73993 10.3183L6.69285 10.0151ZM2.56851 0.5H0.802979V1.5H2.56851V0.5ZM3.99789 1.54519C3.79984 0.922727 3.22172 0.5 2.56851 0.5V1.5C2.78624 1.5 2.97895 1.64091 3.04497 1.8484L3.99789 1.54519Z" fill="#937ADF"/>
+                            <circle cx="7.01408" cy="14.3333" r="1.66667" fill="#937ADF"/>
+                            <circle cx="13.8312" cy="14.3333" r="1.66667" fill="#937ADF"/>
+                            <path d="M4.13306 4.33334H16.1856C16.8362 4.33334 17.3135 4.94473 17.1558 5.57588L15.9891 10.2425C15.8778 10.6877 15.4778 11 15.0189 11H6.5805C6.12163 11 5.72165 10.6877 5.61036 10.2425L4.13306 4.33334Z" fill="#937ADF"/>
+                        </svg>      
+                        <span class="c-dark-gray">
+                            Cart (0)
+                        </span>                      
+                    </div>
+                    <a href="#" data-toggle="show" role="button" aria-expanded="false" aria-controls="#modal-cart"
+                        data-target="#modal-cart, body" aria-label="close">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 11L11 1" stroke="#937ADF" stroke-width="2"/>
+                            <path d="M11 11L1 1" stroke="#937ADF" stroke-width="2"/>
+                        </svg>         
+                        <span class="visibility-hidden">Delete button</span>                   
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <!-- END HEADER -->
+
+        <!-- BODY -->
+        <div class="container-fluid mt-30 overflow-auto h-100 px-30 px-lg-40">
+
+            <div class="row">
+
+                <div class="col-12 ">
+                    <div class="d-flex flex-column">
+
+                        <div class="cart-item">
+
+                            <figure>
+                                <img src="img/product-1.png" alt="Product Thumb">
+                            </figure>
+
+                            <div class="d-flex flex-column ">
+                                <div class="d-flex justify-content-between">
+                                    <div class="body-text">
+                                        <span class="link">Sleeper gummies</span>
+                                        <p class="c-yellow">$40 (500mg)</p>
+                                    </div>
+                                    <a href="#" class="btn-delete">
+                                        <svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.53737 3.00003H1.46276C1.04015 3.00003 0.705786 3.38994 0.735201 3.84985L1.67824 14.2601C1.70466 14.6768 2.02281 15 2.4058 15H8.59428C8.97727 15 9.29542 14.6768 9.32184 14.2601L10.2649 3.84985C10.2943 3.39059 9.95998 3.00003 9.53737 3.00003Z" fill="#82899B"/>
+                                            <path d="M10.7979 0.731848H7.11185L6.99284 0.265079C6.95318 0.110065 6.8038 0 6.63211 0H4.36727C4.19558 0 4.04621 0.109489 4.00654 0.265079L3.88753 0.731848H0.202062C0.0904942 0.731848 0 0.815982 0 0.919708V1.68714C0 1.79087 0.0904942 1.875 0.202062 1.875H10.7979C10.9095 1.875 11 1.79087 11 1.68714V0.919708C11 0.815982 10.9095 0.731848 10.7979 0.731848Z" fill="#82899B"/>
+                                        </svg>     
+                                        <span class="visibility-hidden">Delete Button</span>                                        
+                                    </a>
+                                </div>
+                                <div class="mt-auto pt-15 d-flex justify-content-between align-items-center">
+                                    <div class="col-8">
+                                        <div class="input-quantity w-100 ">
+                                            <span class="input-number-decrement d-flex align-items-center">
+                                                <svg width="11" height="2" viewBox="0 0 11 2" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.5 1H11" stroke="#937ADF" stroke-width="2" />
+                                                </svg>
+
+                                            </span>
+                                            <input class="input-number js-product-qty" max="" min="1" name="quantity"
+                                                type="number" value="1" aria-label="input element">
+                                            <span class="input-number-increment d-flex align-items-center">
+                                                <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0 6H10.5" stroke="#937ADF" stroke-width="2" />
+                                                    <path d="M5.25 11.25L5.25 0.75" stroke="#937ADF" stroke-width="2" />
+                                                </svg>
+
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <span >$40</span>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="cart-item">
+
+                            <figure>
+                                <img src="img/product-1.png" alt="Product Thumb">
+                            </figure>
+
+                            <div class="d-flex flex-column ">
+                                <div class="d-flex justify-content-between">
+                                    <div class="body-text">
+                                        <span class="link">Sleeper bar</span>
+                                        <p class="c-yellow">$40 (500mg)</p>
+                                    </div>
+                                    <a href="#" class="btn-delete">
+                                        <svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.53737 3.00003H1.46276C1.04015 3.00003 0.705786 3.38994 0.735201 3.84985L1.67824 14.2601C1.70466 14.6768 2.02281 15 2.4058 15H8.59428C8.97727 15 9.29542 14.6768 9.32184 14.2601L10.2649 3.84985C10.2943 3.39059 9.95998 3.00003 9.53737 3.00003Z" fill="#82899B"/>
+                                            <path d="M10.7979 0.731848H7.11185L6.99284 0.265079C6.95318 0.110065 6.8038 0 6.63211 0H4.36727C4.19558 0 4.04621 0.109489 4.00654 0.265079L3.88753 0.731848H0.202062C0.0904942 0.731848 0 0.815982 0 0.919708V1.68714C0 1.79087 0.0904942 1.875 0.202062 1.875H10.7979C10.9095 1.875 11 1.79087 11 1.68714V0.919708C11 0.815982 10.9095 0.731848 10.7979 0.731848Z" fill="#82899B"/>
+                                        </svg>         
+                                        <span class="visibility-hidden">Delete Button</span>                                     
+                                    </a>
+                                </div>
+                                <div class="mt-auto pt-15 d-flex justify-content-between align-items-center">
+                                    <div class="col-8">
+                                        <div class="input-quantity w-100 ">
+                                            <span class="input-number-decrement d-flex align-items-center">
+                                                <svg width="11" height="2" viewBox="0 0 11 2" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.5 1H11" stroke="#937ADF" stroke-width="2" />
+                                                </svg>
+
+                                            </span>
+                                            <input class="input-number js-product-qty" max="" min="1" name="quantity"
+                                                type="number" value="1" aria-label="input element">
+                                            <span class="input-number-increment d-flex align-items-center">
+                                                <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0 6H10.5" stroke="#937ADF" stroke-width="2" />
+                                                    <path d="M5.25 11.25L5.25 0.75" stroke="#937ADF" stroke-width="2" />
+                                                </svg>
+
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <span >$40</span>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- END: BODY -->
+
+        <!-- FOOTER -->
+        <div class="container-fluid mt-auto pt-20 pb-25 px-md-30 px-lg-25">
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="cart-footer">
+                        <div class="d-flex align-items-center justify-content-between h2 pb-10">
+                            <span>Subtotal</span>
+                            <span>$40</span>
+                        </div>
+                        <div class="col-10">
+                            <p class="c-light-gray">
+                                Shipping codes, taxes and discounts are calculated at checkout.
+                            </p>
+                        </div>
+    
+                        <a href="./cart.html" class="btn btn-fill w-100 mt-20">
+                            proceed to payment
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- END: FOOTER -->
+
+    </div>
+
+    <!-- EMPTY STATE -->
+    <div class="cart-wrapper d-none">
+
+        <!-- HEADER -->
+        <div class="container-fluid pt-30 px-30 px-lg-40">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center" >
+                        <svg class="me-2" width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.73993 10.3183C5.82365 10.5814 6.10485 10.7269 6.36799 10.6431C6.63114 10.5594 6.77658 10.2782 6.69285 10.0151L5.73993 10.3183ZM0.802979 0.5C0.526836 0.5 0.302979 0.723858 0.302979 1C0.302979 1.27614 0.526836 1.5 0.802979 1.5V0.5ZM6.69285 10.0151L3.99789 1.54519L3.04497 1.8484L5.73993 10.3183L6.69285 10.0151ZM2.56851 0.5H0.802979V1.5H2.56851V0.5ZM3.99789 1.54519C3.79984 0.922727 3.22172 0.5 2.56851 0.5V1.5C2.78624 1.5 2.97895 1.64091 3.04497 1.8484L3.99789 1.54519Z" fill="#937ADF"/>
+                            <circle cx="7.01408" cy="14.3333" r="1.66667" fill="#937ADF"/>
+                            <circle cx="13.8312" cy="14.3333" r="1.66667" fill="#937ADF"/>
+                            <path d="M4.13306 4.33334H16.1856C16.8362 4.33334 17.3135 4.94473 17.1558 5.57588L15.9891 10.2425C15.8778 10.6877 15.4778 11 15.0189 11H6.5805C6.12163 11 5.72165 10.6877 5.61036 10.2425L4.13306 4.33334Z" fill="#937ADF"/>
+                        </svg>      
+                        <span class="c-dark-gray">
+                            Cart (0)
+                        </span>                      
+                    </div>
+                    <a href="#" data-toggle="show" role="button" aria-expanded="false" aria-controls="#modal-cart"
+                        data-target="#modal-cart, body" aria-label="close">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 11L11 1" stroke="#937ADF" stroke-width="2"/>
+                            <path d="M11 11L1 1" stroke="#937ADF" stroke-width="2"/>
+                        </svg>                            
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <!-- END HEADER -->
+
+        <!-- BODY -->
+        <div class="container-fluid mt-30 mt-lg-60 overflow-auto h-100 px-40 px-md-55 px-lg-65">
+
+            <div class="row">
+
+                <div class="col-12 d-flex justify-content-center">
+                    
+                    <svg width="319" height="361" viewBox="0 0 319 361" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M32.5474 136.656L29.8861 134L27.4561 136.426C17.5195 146.344 17.5195 162.424 27.4561 172.342L30.119 175L32.5491 172.574C42.484 162.656 42.484 146.575 32.5474 136.656Z" fill="#9DE26F"/>
+                        <path d="M9.88246 134L7.45242 136.426C-2.48414 146.344 -2.48414 162.424 7.45242 172.342L10.1154 175L12.5454 172.574C22.482 162.656 22.482 146.576 12.5454 136.658L9.88246 134Z" fill="#9DE26F"/>
+                        <path d="M259 321C247.955 321 239 329.955 239 341C239 352.045 247.955 361 259 361C270.045 361 279 352.045 279 341C279 329.955 270.045 321 259 321ZM259 348.066C255.098 348.066 251.934 344.902 251.934 341C251.934 337.098 255.098 333.934 259 333.934C262.902 333.934 266.066 337.098 266.066 341C266.066 344.902 262.902 348.066 259 348.066Z" fill="#D12236"/>
+                        <path d="M316.073 16.7315C317.305 13.8855 316.991 10.4609 314.962 7.84735C312.933 5.2338 309.723 4.11882 306.703 4.66331C305.277 1.91161 302.44 0.0245881 299.159 0.000207983C295.878 -0.0225468 293.015 1.82384 291.552 4.55603C288.541 3.96929 285.316 5.03876 283.25 7.62305C281.185 10.2073 280.824 13.6271 282.017 16.4909C279.685 18.5096 278.497 21.731 279.202 24.98C279.906 28.2275 282.318 30.6476 285.271 31.4895C285.373 34.5956 287.117 37.5472 290.061 39.0149C293.005 40.4825 296.375 40.0827 298.867 38.2688C301.327 40.1266 304.689 40.5866 307.659 39.1709C310.64 37.7487 312.434 34.8117 312.577 31.6927C315.558 30.9028 318.02 28.5135 318.772 25.2612C319.52 22.0219 318.378 18.7843 316.073 16.7315Z" fill="#937ADF"/>
+                        </svg>
+                        
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- END: BODY -->
+
+        <!-- FOOTER -->
+        <div class="container-fluid mt-auto pb-25 px-md-30 px-lg-25">
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="cart-footer">
+                        <div class="d-flex align-items-center justify-content-between h2 pb-10">
+                            <span>Uh oh!</span>
+                        </div>
+                        <div class="col-10">
+                            <p class="c-light-gray">
+                                Your bag is empty, look around our shop to fill it up.
+                            </p>
+                        </div>
+    
+                        <a href="./shop.html" class="btn btn-fill w-100 mt-20">
+                            Shop the latest
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- END: FOOTER -->
+
+    </div>
+    <!-- END: EMPTY STATE -->
+
+    <a href="#" data-toggle="show" role="button" aria-expanded="false" aria-controls="#modal-cart"
+        data-target="#modal-cart, body" class="background-modal" aria-label="background"></a>
+
+</div>
