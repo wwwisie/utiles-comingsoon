@@ -26,12 +26,12 @@ h1,
   @include h1;
 
   &.text-stroke {
-    -webkit-text-stroke: 2px #0E5610;
-    text-stroke: 2px #0E5610;
+    -webkit-text-stroke: 1px #0E5610;
+    text-stroke: 1px #0E5610;
 
     @include media-breakpoint-up(md) {
-      -webkit-text-stroke: 3px #0E5610;
-      text-stroke: 3px #0E5610;
+      -webkit-text-stroke: 2px #0E5610;
+      text-stroke: 2px #0E5610;
     }
     @include media-breakpoint-up(lg) {
       -webkit-text-stroke: 5px #0E5610;
